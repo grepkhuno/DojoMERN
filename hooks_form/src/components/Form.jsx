@@ -32,10 +32,11 @@ export const Form = () => {
             <div className='col-5'>
               <input type="text" className="form-control " onChange={(e) => setFirstName(e.target.value)} />
             </div>
-            {/* {
-              firstName && firstName.length < 3 ? <p>Please enter a first name</p> : null
-            } */}
+
           </div>
+          {
+            firstName && firstName.length < 3 ? <p>Please enter a first name</p> : null
+          }
         </div>
         <div className="border col-8 mx-auto bg-light mt-4">
           <div className="input-group align-items-center justify-content-around">
@@ -43,10 +44,11 @@ export const Form = () => {
             <div className='col-5'>
               <input type="text" className="form-control" onChange={(e) => setLastName(e.target.value)} />
             </div>
-            {/* {
-          lastName && lastName.length < 3 ? <p>Please enter a last name</p> : null
-        } */}
+
           </div>
+          {
+            lastName && lastName.length < 3 ? <p>Please enter a last name</p> : null
+          }
         </div>
         <div className="border col-8 mx-auto bg-light mt-4">
           <div className="input-group align-items-center justify-content-around">
@@ -54,10 +56,11 @@ export const Form = () => {
             <div className='col-5'>
               <input className="form-control" type="email" onChange={(e) => setEmail(e.target.value)} />
             </div>
-            {/* {
-          email && email.length < 3 ? <p>Please enter a last name</p> : null
-        } */}
+
           </div>
+          {
+            email && email.length < 3 ? <p>Please enter valid email</p> : null
+          }
         </div>
         <div className="border col-8 mx-auto bg-light mt-4">
           <div className="input-group align-items-center justify-content-around">
@@ -65,10 +68,11 @@ export const Form = () => {
             <div className='col-5'>
               <input className="form-control" type="password" onChange={(e) => setPassword(e.target.value)} />
             </div>
-            {/* {
-          password && password.length < 3 ? <p>Please enter a last name</p> : null
-        } */}
+
           </div>
+          {
+            password && password.length < 3 ? <p>Please enter a valid password</p> : null
+          }
         </div>
         <div className="border col-8 mx-auto bg-light mt-4">
           <div className="input-group align-items-center justify-content-around">
@@ -76,10 +80,11 @@ export const Form = () => {
             <div className='col-5'>
               <input className="form-control" type="password" onChange={(e) => setConfirmPassword(e.target.value)} />
             </div>
-            {/* {
-          confirmPassword && confirmPassword.length < 3 ? <p>Please enter a last name</p> : null
-        } */}
+
           </div>
+          {
+            confirmPassword && confirmPassword.length < 3 ? <p>Please enter a valid password</p> : null
+          }
         </div>
         <button className='btn btn-primary mt-3' data-bs-toggle="collapse" data-bs-target="#infoTable"> Submit Info</button>
 
