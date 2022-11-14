@@ -8,8 +8,7 @@ const Display = ({ list, setList }) => {
 
     const deleteMe = val => {
         setList(list.filter(item => (item.content != val)))
-        const count = list.length-1
-        document.title = `You have '${count}' in your List`;
+         document.title = `You have '${list.length-1}' in your List`;
 
     }
 
