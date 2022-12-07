@@ -1,0 +1,18 @@
+const express = require('express')
+const app = express()
+const PORT = 8000
+require("./config/mongoose.config")
+
+
+
+//middleware//
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+////////////////////////////////////////////
+const jokesRoutes = require("./routes/jokes.routes")
+jokesRoutes(app)
+
+app.listen(PORT, () => {
+    console.log(`*Server is up and running on port ${PORT}`)
+})
+
